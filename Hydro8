@@ -1,0 +1,28 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Hydro8", "DarkTheme")
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Main")
+Section:NewButton("simple spy", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
+    print("Clicked")
+end)
+
+local Tab = Window:NewTab("discord server")
+local Section = Tab:NewSection("Insert section name here")
+
+Section:NewLabel("https://discord.gg/UTSpj2FD")
+
+local Tab = Window:NewTab("Admin")
+local Section = Tab:NewSection("Admin")
+Section:NewButton("inf Yield", "loads up inf yield.", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+    print("Clicked")
+end)
+Section:NewButton("Nameless admin", "ButtonInfo", function()
+--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source"))();
+
+    print("Clicked")
+end)
